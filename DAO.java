@@ -52,7 +52,7 @@ class DAO
 //                res.next();
 //            int rn= res.getRow();
             Statement stm = con.createStatement();
-            String query = "delete from data"+id1;
+            String query = "delete * from data where id="+id1;
             stm.executeUpdate(query);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
